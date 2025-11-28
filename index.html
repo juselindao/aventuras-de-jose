@@ -6,85 +6,83 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>A Oficina Misteriosa</title>
 </head>
 <body>
     <main>
+
         <div class="passo ativo" id="passo-0">
-            <img src="img/cenario-passo0.png" alt="">
-            <p>Você está caminhando pela floresta quando tropeça em uma abertura escondida na encosta de uma montanha. Uma Caverna Misteriosa se revela. O ar que emana dela é frio, e você consegue ouvir um som fraco, como um gemido distante, vindo de dentro. A escuridão parece convidativa e perigosa.</p>
-            <button class="btn-proximo" data-proximo="1">Dentro da caverna</button>
-            <button class="btn-proximo" data-proximo="2">O brilho no escuro</button>
+            <img src="img/oficina-inicio.png" alt="">
+            <p>Você é um jovem mecânico que acaba de herdar a antiga oficina do seu avô. Ao explorar o local, encontra um envelope com instruções enigmáticas sobre um “motor lendário” capaz de revolucionar a mecânica automotiva. Sua missão é descobrir como montá-lo.</p>
+            <button class="btn-proximo" data-proximo="1">Investigar o escritório do avô</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o galpão da oficina</button>
         </div>
+
         <div class="passo" id="passo-1">
-            <p>Você respira fundo e avança para a escuridão úmida. Seus olhos se acostumam lentamente, e você percebe que a caverna principal se divide em dois túneis distintos.</p>
-            <button class="btn-proximo" data-proximo="3">seguir reto/button>
-            <button class="btn-proximo" data-proximo="4">O Rosnado/button>
+            <p>No escritório, você encontra manuais antigos e um diário com a primeira pista: “comece sempre pelo coração do carro”.</p>
+            <button class="btn-proximo" data-proximo="3">Ir para a área dos motores</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar e procurar outra pista</button>
         </div>
+
         <div class="passo" id="passo-2">
-            <p>Você aperta o corpo para passar pelo corredor estreito da Direita. O ar aqui é mais pesado. De repente, o gemido fraco que você ouviu antes se transforma em um rosnado profundo e gutural vindo de algum lugar mais adiante.</p>
-            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+            <p>No galpão, há peças antigas espalhadas e uma bancada bagunçada. Entre elas, uma caixa com um símbolo estranho.</p>
+            <button class="btn-proximo" data-proximo="5">Abrir a caixa</button>
+            <button class="btn-proximo" data-proximo="6">Procurar outra coisa no galpão</button>
         </div>
+
         <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <p>Na área dos motores, você encontra um bloco de motor com marcas diferentes. Há um bilhete dizendo: “A próxima etapa está onde o ar ganha vida”.</p>
+            <button class="btn-proximo" data-proximo="7">Ir até o setor de admissão de ar</button>
         </div>
 
         <div class="passo" id="passo-4">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
-            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
-                encontrado.</p>
+            <img src="img/desistiu.png" alt="">
+            <p>Você decide abandonar as pistas. A oficina continua funcionando, mas você sempre se pergunta o que teria descoberto.</p>
         </div>
 
         <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+            <p>Dentro da caixa, há um carburador antigo com inscrições indicando uma tecnologia avançada perdida ao tempo. Uma etiqueta diz: “Siga para o coração da combustão”.</p>
+            <button class="btn-proximo" data-proximo="7">Ir ao setor de combustão</button>
         </div>
 
         <div class="passo" id="passo-6">
-            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
+            <p>No resto do galpão, você só encontra peças quebradas. Nada útil por aqui.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar e abrir a caixa</button>
         </div>
 
         <div class="passo" id="passo-7">
-            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+            <p>Na área de admissão/combustão, você encontra dois caminhos para resolver o enigma do motor lendário.</p>
+            <button class="btn-proximo" data-proximo="9">Examinar o sistema de admissão</button>
+            <button class="btn-proximo" data-proximo="10">Examinar o sistema de combustão</button>
         </div>
 
         <div class="passo" id="passo-8">
-            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+            <p>Você retorna e finalmente encontra a pista correta. Agora pode seguir.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar ao setor principal</button>
         </div>
 
         <div class="passo" id="passo-9">
-            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
-                cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <p>Analisando o sistema de admissão, você descobre um filtro de ar especial escondido com o mapa final do motor lendário.</p>
+            <button class="btn-proximo" data-proximo="11">Montar o motor lendário</button>
         </div>
 
         <div class="passo" id="passo-10">
-            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
-                aqui.</p>
-            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+            <p>No sistema de combustão, você encontra peças queimadas e nada útil para o enigma.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar a admissão</button>
         </div>
 
         <div class="passo" id="passo-11">
-            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
-            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
-                este lugar</p>
+            <img src="img/motor-lendario.png" alt="">
+            <p>Você monta o motor lendário! Uma tecnologia híbrida avançada que combina eficiência extrema com potência impressionante. Agora sua oficina se torna referência nacional.</p>
         </div>
 
         <div class="passo" id="passo-12">
-            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
-                que levam à cidade perdida.</p>
-            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+            <p>Voltando à área de admissão, você encontra o mapa escondido.</p>
+            <button class="btn-proximo" data-proximo="11">Montar o motor lendário</button>
         </div>
+
     </main>
+
     <script src="script.js"></script>
 </body>
-</html>
